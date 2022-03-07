@@ -32,6 +32,9 @@ export interface User {
   firstname: string;
   lastname: string;
   email: string;
+  password?: string;
   role: string;
   token?: string;
+  createdAt?: Date;
+  deletedAt?: Date;
 }
