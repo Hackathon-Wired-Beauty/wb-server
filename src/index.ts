@@ -20,7 +20,7 @@ app.use((req: any, res: any, next: any) => {
 });
 
 app.get("/", function (req: any, res: any) {
-  res.status(200).json({ "server-name": { version: process.env.VERSION } });
+  res.status(200).json({ "wb-server": { version: process.env.VERSION } });
 });
 
 const routes = getRoutes();
