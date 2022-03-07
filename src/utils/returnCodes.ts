@@ -1,16 +1,24 @@
 export const returnCode = {
   missingToken: {
-    code: 401,
-    message: {
+    code: 403,
+    payload: {
       title: "missing_token",
       message: "Missing token, couldn't authenticate",
     },
   },
   invalidToken: {
     code: 401,
-    message: {
+    payload: {
       title: "invalid_token",
       message: "Invalid token, couldn't authenticate",
+    },
+  },
+  unauthorized: {
+    code: 403,
+    payload: {
+      title: "unauthorized",
+      message:
+        "Unautthorized, you don't have the permission to do this or access this resource",
     },
   },
   missingParameters: {
@@ -50,11 +58,11 @@ export const returnCode = {
       message: "The user has been successfully created.",
     },
   },
-  unauthorized: {
-    code: 401,
+  userLoggedIn: {
+    code: 200,
     payload: {
-      title: "unauthorized",
-      message: "You need to authetificate before using this route!",
+      title: "user_logged_in",
+      message: "The user has been successfully logged in.",
     },
   },
   internalError: {
