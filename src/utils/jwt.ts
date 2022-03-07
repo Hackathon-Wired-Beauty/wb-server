@@ -19,3 +19,8 @@ export const generateToken = (user: User): string => {
   );
   return token;
 };
+
+export const verifyJwt = (token: string): User => {
+  const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  return decoded as User;
+};
