@@ -1,32 +1,4 @@
-# ExpressJS + TypeScript boilerplate
-
-This boilerplate includes a basic `ExpressJS` and `TypeScript` implementation.
-
-## Getting started
-
-Click on the button `Use this template` and give a name to your repository and then clone your project using CLI or GUI Client.
-
-First things first, install all dependencies using `npm`.
-```bash
-npm install # Or `npm i`
-```
-
-Then you have to change the `package.json` according to your project:
-```json
-{
-  "name": "expressjs-typescript-boilerplate", <=== Set this field to your project name
-  "version": "1.0.0",
-  "description": "ExpressJS & TypeScript boilerplate", <=== Set the description of your project
-  ...
-  "keywords": [ <=== Update the keywords according to your needs
-    "server",
-    "express",
-    "mysql"
-  ],
-  "author": "MisterGoodDeal", <=== Set this to your username
-  ...
-}
-```
+# Wired Beauty - Server
 
 ## Available commands
 
